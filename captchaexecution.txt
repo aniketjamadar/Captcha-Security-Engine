@@ -1,0 +1,26 @@
+step1:
+copy captcha folder into webapps folder of tomcat.
+
+step2:
+start tomcat...
+
+step3:
+open oracle sql command line
+
+step4:
+
+sql> create user captcha identified by captcha;
+sql> grant resource,connect,dba to captcha;
+sql> conn captcha/captcha;
+ 
+ step5:
+ now create tables given in captcha tables doc file
+
+ step6:
+ once everything is ready, open an IE...
+ use the syntax:
+
+ http://localhost:(ur tomcat port no):captcha/
+
+ step7:
+ run the application successfully 
